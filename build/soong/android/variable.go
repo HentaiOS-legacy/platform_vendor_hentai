@@ -27,6 +27,9 @@ type Product_variables struct {
 		Cppflags []string
 		Shared_libs []string
 	}
+	Uses_generic_camera_parameter_library struct {
+		Srcs []string
+	}
 }
 
 type ProductVariables struct {
@@ -38,4 +41,6 @@ type ProductVariables struct {
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
+	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
+	Specific_camera_parameter_library  *string `json:",omitempty"`
 }
