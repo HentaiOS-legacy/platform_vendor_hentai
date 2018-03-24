@@ -23,6 +23,10 @@ type Product_variables struct {
 	Supports_extended_compress_format struct {
 		Cflags []string
 	}
+	Uses_qti_camera_device struct {
+		Cppflags []string
+		Shared_libs []string
+	}
 }
 
 type ProductVariables struct {
@@ -33,4 +37,5 @@ type ProductVariables struct {
 	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
+	Uses_qti_camera_device  *bool `json:",omitempty"`
 }
