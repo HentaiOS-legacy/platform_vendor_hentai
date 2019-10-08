@@ -9,7 +9,7 @@ type Product_variables struct {
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
-	Should_skip_waiting_for_qsee struct {
+	Should_wait_for_qsee struct {
 		Cflags []string
 	}
  	Supports_hw_fde struct {
@@ -30,7 +30,7 @@ type ProductVariables struct {
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Supports_extended_compress_format  *bool `json:",omitempty"`
-	Should_skip_waiting_for_qsee  *bool `json:",omitempty"`
+	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
 }
