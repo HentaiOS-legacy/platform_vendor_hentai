@@ -20,5 +20,5 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/hentai/apex
 
 PRODUCT_PACKAGES += \
-    ModuleMetadataGooglePrebuilt
+    ModuleMetadataGoogle
 endif
