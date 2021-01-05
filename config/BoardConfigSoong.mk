@@ -28,10 +28,12 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 
 SOONG_CONFIG_NAMESPACES += hentaiGlobalVars
 SOONG_CONFIG_hentaiGlobalVars += \
-    target_surfaceflinger_fod_lib
+    target_surfaceflinger_fod_lib \
+    supports_extended_compress_format
 
 # Set default values
 TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_fod_lib
 
 # Soong value variables
 SOONG_CONFIG_hentaiGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACEFLINGER_FOD_LIB)
+SOONG_CONFIG_hentaiGlobalVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
